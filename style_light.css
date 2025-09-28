@@ -1,0 +1,122 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7fafc; 
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.calculator-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0; 
+    width: 100%;
+    max-width: 650px;
+}
+
+h1 {
+    color: #1a202c;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 35px;
+    font-size: 1.9em;
+    font-weight: 700;
+}
+
+.input-section h2 {
+    font-size: 1.1em;
+    color: #718096;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #4a5568;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 0; 
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #cbd5e0; 
+    border-radius: 0;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+    color: #1a202c;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-bottom-color: #1767b6;
+}
+
+button {
+    width: 100%;
+    padding: 16px;
+    background-color: #1767b6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 25px;
+}
+
+button:hover {
+    background-color: #5846ab;
+}
+
+#resultado {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #e2e8f0;
+}
+
+.final-result, .summary-details {
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 15px;
+    border-left-width: 4px;
+    border-left-style: solid;
+}
+
+.summary-details {
+    background-color: #f7fafc;
+    border: 1px solid #e2e8f0;
+    border-left: none;
+}
+
+.success { background-color: #f0fff4; border-left-color: #3c4a98; }
+.info { background-color: #ebf8ff; border-left-color: #3182ce; }
+.error { background-color: #fff5f5; border-left-color: #c53030; }
+
+/* --- CÓDIGO PARA REMOVER AS SETAS DO CAMPO NUMÉRICO --- */
+
+/* Para navegadores como Chrome, Safari, Edge e Opera */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; 
+}
+
+ /* Para o navegador Firefox */
+ input[type="number"] {
+    -moz-appearance: textfield; 
+}

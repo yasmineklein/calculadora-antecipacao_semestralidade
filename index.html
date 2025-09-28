@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Antecipação da semestralidade</title>
+    <link rel="stylesheet" href="style_light.css">
+</head>
+<body>
+
+    <div class="calculator-container">
+        <h1>Calculadora de Antecipação</h1>
+
+        <form onsubmit="return false;">
+            <div class="input-group">
+                <label for="valorIntegral">Valor Integral da Mensalidade (R$)</label>
+                <input type="number" step="any" id="valorIntegral">
+            </div>
+
+            <div class="input-group">
+                <label for="percentualCampanha">Desconto Bolsa Campanha Padrão (%)</label>
+                <input type="number" step="any" id="percentualCampanha">
+            </div>
+
+            <div class="input-group">
+                <label for="percentualIncentivo">Desconto Bolsa Incentivo (%)</label>
+                <input type="number" step="any" id="percentualIncentivo">
+            </div>
+
+            <div class="input-group">
+                <label for="qtdParcelas">Quantidade de Parcelas a Antecipar</label>
+                <input type="number" id="qtdParcelas" min="1" max="6">
+            </div>
+            
+            <div class="input-group">
+                <label for="percentualAntecipacao">Desconto por Antecipação (%)</label>
+                <input type="number" step="any" id="percentualAntecipacao">
+            </div>
+
+            <button onclick="calcularAntecipacao()">Calcular</button>
+        </form>
+
+        <div id="resultado">
+            </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
