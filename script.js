@@ -51,10 +51,11 @@ function calcularAntecipacao() {
         <div class="result-block breakdown">
             <h3>📊 Lançamento de Créditos no Financeiro</h3>
             <p>Crédito de antecipação de semestralidade: <strong>R$ ${valorTotalPago.toFixed(2)}</strong></p>
-            <p>Crédito da Bolsa Incentivo: <strong>R$ ${valorTotalBolsaIncentivo.toFixed(2)}</strong></p>
-            <p>Valor total do Desconto de Antecipação (${percAntecipacaoReal}%): <strong>R$ ${valorDescontoAntecipacao.toFixed(2)}</strong></p>
+            <p>Crédito por não aplicação da Bolsa Incentivo: <strong>R$ ${valorTotalBolsaIncentivo.toFixed(2)}</strong></p>
+            <p>Desconto por antecipação de semestralidade (${percAntecipacaoReal}%): <strong>R$ ${valorDescontoAntecipacao.toFixed(2)}</strong></p>
         </div>
     `;
     
     resultadoDiv.innerHTML = resultadoHTML;
+
 }
